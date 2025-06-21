@@ -1,0 +1,4 @@
+git add .
+git commit -m "Ajout du fichier script_git.txt"
+git remote -v 
+git push -u origin main
