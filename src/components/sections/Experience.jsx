@@ -213,36 +213,29 @@ export const Experience = () => {
            </h2>    
           <div className="w-full max-w-5xl mx-auto p-4 flex sm:flex-row flex-col gap-4">
             {/* Tablist */}
-            <div className="w-full sm:w-1/4 flex sm:flex-col border-l border-gray-600">
-              {tabs.map((tab, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveTab(index)}
-                  className={`py-2 px-4 text-sm text-left font-medium transition-all duration-500
-                    ${
-                      activeTab === index
-                        ? "border-l-2 border-teal-500 text-teal-600 bg-navy-600"
-                        : "border-l-2 border-transparent text-gray-400 hover:text-teal-600 hover:bg-transparent"
-                    }`}
-                >
-                  {tab}
-                </button>
-              ))}
+            <div className="w-full sm:w-1/4 flex sm:flex-col">
+              <div className="border-l border-gray-600 flex flex-col">
+                {tabs.map((tab, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    className={`py-2 px-4 text-sm text-left font-medium transition-all duration-500
+                      ${
+                        activeTab === index
+                          ? "border-l-2 border-teal-500 text-teal-600 bg-navy-600"
+                          : "border-l-2 border-transparent text-gray-400 hover:text-teal-600 hover:bg-transparent"
+                      }`}
+                  >
+                    {tab}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Panels */}
             {/* Panel à droite avec hauteur fixe */}
-            <div className="relative flex-1 min-h-[180px]">
-              {panels.map((content, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 transition-opacity duration-500 ${
-                    activeTab === index ? "transition-all opacity-100 shadow-lg" : "opacity-0  pointer-events-none"
-                  }`}
-                >
-                  {content}
-                </div>
-              ))}
+            <div className="relative flex-1">
+               {panels[activeTab]}
             </div>
 
           </div>
