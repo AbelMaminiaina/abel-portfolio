@@ -88,39 +88,34 @@ export const Experience = () => {
         <h2 className="text-lg font-semibold">IT Developer .net <span className="text-teal-600">@ Ubitek</span></h2>
         <p className="text-sm text-gray-500 font-mono">2018-2024</p>
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Maintenance corrective, évolutive de l’application Web CTdirect utilisée 
-          par DEKRA Automotive pour la gestion des processus liés aux contrôles techniques 
-          des véhicules qui permet d'optimiser l'administration, la gestion des rendez-vous, 
-          la gestion des rapports, ainsi que le suivi des résultats de chaque contrôle 
-          technique effectué dans les centres DEKRA.
+          Maintenance corrective et évolutive de l’application web CTdirect de DEKRA Automotive, 
+          dédiée à la gestion des processus de contrôle technique : 
+          administration, rendez-vous, rapports et suivi des résultats.
         </p>
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Mise en place d’une facturation périodique générée automatiquement à chaque fin du mois.
+          Collaboration étroite avec les directeurs créatifs, les designers 
+          et les autres ingénieurs pour transformer des concepts créatifs 
+          en produits numériques aboutis, répondant aux attentes des utilisateurs et des parties prenantes.
         </p> 
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Dématérialisation du process de contrôle technique des voitures sur Tablet 
-          et sur Personal Computer: Signature, Les factures (le procès-verbal, facture, le double).
+          Réalisation d’une facturation périodique générée automatiquement à chaque fin du mois.
         </p> 
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Maintenance corrective, évolutive de l’application Aurore de Dekra Automotive : 
-          un outil numérique qui facilite la gestion des contrôles techniques des véhicules 
-          ainsi que la gestion des dossiers clients et des rapports de contrôle.
+          Dématérialisation du process de contrôle technique des voitures sur Tablet et 
+          sur Personal Computer: Signature, Les factures (le procès-verbal, facture, le double).
         </p> 
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Consolidation des données : centraliser et organiser des données provenant de
-          plusieurs sources distinctes (centres) afin de les analyser, de les traiter 
-          et de les visualiser de manière cohérente.
+          Consolidation des données : centraliser et organiser des données provenant de plusieurs sources distinctes 
+          (centres) afin de les analyser, de les traiter et de les visualiser de manière cohérente.
         </p>  
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Conception et développement d’un module complet de gestion des rendez-vous, 
-          permettant aux utilisateurs de planifier, visualiser et gérer leurs créneaux 
-          via une interface intuitive. Le système inclut la création de rendez-vous 
-          avec date, heure, lieu, participants et notifications automatiques (email/SMS).
+          Conception et développement d’un module de gestion des rendez-vous avec planification, visualisation, 
+          notifications automatiques et interface utilisateur intuitive.
         </p>    
 
       </>,
@@ -128,9 +123,8 @@ export const Experience = () => {
         <h2 className="text-lg font-semibold mb-2">Développeur FullStack .net <span className="text-teal-600">@ Wylog</span></h2>
         <p className="text-sm text-gray-500 font-mono">2017-2018</p>
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Développement d’un site web complet dédié à la formation en ligne, permettant 
-          aux utilisateurs de suivre des cours, de visualiser des supports pédagogiques, 
-          de passer des évaluations et de suivre leur progression.
+          Développement d’un site web de formation en ligne permettant le suivi de cours, 
+          l’accès à des supports pédagogiques, la réalisation d’évaluations et le suivi de la progression des utilisateurs.
         </p>
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
@@ -148,42 +142,41 @@ export const Experience = () => {
         </p> 
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Participation à l’évolution de cahiers des charges fonctionnels et techniques avec les équipes métier.
+          Contribution à l’évolution des cahiers des charges fonctionnels et techniques avec les équipes métier.
         </p>             
       </>,
       <>
         <h2 className="text-lg font-semibold mb-2">Lead Développeur .net <span className="text-teal-600">@ Madamonitor</span></h2>
         <p className="text-sm text-gray-500 font-mono">2016-2017</p>
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Plateforme d'Analyse et de Reporting : Conception et développement de tableaux 
-          de bord interactifs et personnalisés pour visualiser en temps réel les indicateurs 
-          clés liés aux données medias (audience, performence).
+          Leadership technique par le mentorat, le partage de connaissances et la collaboration, 
+          favorisant un environnement d’apprentissage continu et d’excellence technique.
         </p>
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Mise en place d’un module complet de gestion des tâches utilisateurs permettant 
-          aux membres d'une équipe de planifier, suivre et organiser leur travail de manière 
-          collaborative. Intégration des systèmes et automatisation des Processus
+          Développement d’un plateforme d'Analyse et de Reporting : Conception et développement 
+          de tableaux de bord interactifs pour visualiser en temps réel les indicateurs clés liés 
+          aux données medias (audience, performence).
         </p> 
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Création d'APIs permettant l’intégration des différentes applications et plateformes
-          internes ou externes, afin de faciliter le transfert de données et de garantir 
-          l’interopérabilité entre différents systèmes.
-        </p>               
+          Mise en place d’un module de gestion des tâches utilisateurs, permettant la planification, 
+          le suivi et l'organisation collaborative du travail, avec intégration et automatisation des processus.
+        </p>   
+
+        <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
+          Création et maintenance d'APIs pour l'intégration d'applications et plateformes internes/externes, 
+          facilitant le transfert de données et garantissant l'interopérabilité des systèmes.
+        </p>                     
       </>,
       <>
         <h2 className="text-lg font-semibold mb-2">Développeur ¨Progress et Java <span className="text-teal-600">@ Sneda</span></h2>
         <p className="text-sm text-gray-500 font-mono">2010-2015</p>
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Maintenance corrective, évolutive du module de demandes de Logement 
-          (suivi des demandes, critères de sélection, gestion des candidatures). 
+          Contribution majeure à la maintenance corrective, évolutive du module de demande de Logement, 
+          (suivi des demandes, critères de sélection, gestion des candidatures), du module de gestion locative 
+          (suivi des baux, gestion des locataires, régularisation des charges) . 
         </p>
-
-        <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Maintenance corrective, évolutive du module de gestion locative 
-          (suivi des baux, gestion des locataires, régularisation des charges)
-        </p> 
 
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
           Migration d’un système existant vers une nouvelle technologie récente 
@@ -194,7 +187,7 @@ export const Experience = () => {
         <h2 className="text-lg font-semibold mb-2">Développeur fullstack .net <span className="text-teal-600">@ Freelance</span></h2>
         <p className="text-sm text-gray-500 font-mono">2025</p>
         <p className="ml-6 py-3 text-sm before:content-['➤'] before:mr-2 text-gray-400">
-          Crée, conçu, Développé, maintenu du code d'un site web client, principalement en HTML, CSS, React, .Net Web Api.
+          Crée, conçu, développé, maintenu du code d'un site web d'une association, principalement en HTML, TailwindCSS, typescript, .Net Web Api, SQL.
         </p>               
       </>
     ];
