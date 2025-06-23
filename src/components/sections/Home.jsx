@@ -30,7 +30,7 @@ export const Home = () => {
             </a>
 
             <a
-              href={resume}
+              href={resume} download="resume"
               className="border border-teal-500/50 text-teal-500 py-3 px-6 rounded font-medium transition-all duration-200 
              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-teal-500/10"
             >
