@@ -19,123 +19,9 @@ export const Projects = () => {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-teal-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
-          Quelques réalisations
+          Mes réalisations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 py-6 gap-6">
-
-            <div
-              className="
-              glass p-6 rounded-xl border border-white/10 
-              hover:-translate-y-1 hover:border-teal-500/30
-              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-              transition-all relative
-            "
-            >
-              <h3 className="text-xl font-bold mb-2 hover:text-teal-300 transition-colors">Migrations</h3>
-              <p className="text-gray-300 mb-4">
-                Migration des services WCF vers une API RESTful avec ASP.NET Core
-              </p>
-
-              <p className="text-gray-300 mb-4">
-                Migration des rapports Crystal Reports vers SSRS (SQL Server Reporting Services)
-              </p>
-              <p className="text-gray-300 mb-4">
-                Migration et intégration de PDF.js pour l'affichage de rapports interactifs
-              </p>              
-
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[".Net Core", "Web API", "SSRS", "SQL"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="
-                      bg-teal-500/10 text-teal-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-teal-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="absolute bottom-4 right-4 flex items-center gap-4">                
-                <a
-                  href="https://ctdirect.fr/" // remplace par ton lien GitHub
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-teal-300 transition-colors my-4">
-                  <FaExternalLinkAlt size={20} />
-                </a>                                 
-                
-                <a
-                  href="https://github.com/tonpseudo" // remplace par ton lien GitHub
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-teal-300 transition-colors my-4">
-                    <FaGithub size={20} />
-                  </a>                              
-              </div>
-              {/* <div className="flex justify-between items-center ">
-                <a
-                  href="#"
-                  className="text-teal-400 hover:text-teal-300 transition-colors my-4"
-                >
-                  View Project →
-                </a>             
-              </div> */}
-            </div>
-
-            <div
-              className="
-              glass p-6 rounded-xl border border-white/10 
-              hover:-translate-y-1 hover:border-teal-500/30
-              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
-              transition-all relative
-            "
-            >
-              <h3 className="text-xl font-bold mb-2 hover:text-teal-300 transition-colors">Consolidation des données</h3>
-              <p className="text-gray-300 mb-4">
-                Maintenance corrective, évolutive de la consolidation des données : 
-                centraliser et organiser des données provenant de plusieurs sources distinctes (centres) 
-                afin de les analyser, de les traiter et de les visualiser de manière cohérente.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["C#", ".Net", "SQL"].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="
-                      bg-teal-500/10 text-teal-500 py-1 px-3 
-                      rounded-full text-sm
-                      transition
-                      hover:bg-teal-500/20 hover:-translate-y-0.5
-                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
-                    "
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="absolute bottom-4 right-4 flex items-center gap-4">                
-                  <a
-                    href="https://ctdirect.fr/" // remplace par ton lien GitHub
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-teal-300 transition-colors my-4">
-                    <FaExternalLinkAlt size={20} />
-                  </a>                                 
-                  
-                  <a
-                    href="https://github.com/tonpseudo" // remplace par ton lien GitHub
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-teal-300 transition-colors my-4">
-                    <FaGithub size={20} />
-                  </a>                              
-              </div>
-
-            </div>             
 
             <div className="
                 glass p-6 rounded-xl border border-white/10 
@@ -173,17 +59,16 @@ export const Projects = () => {
                   className="text-gray-400 hover:text-teal-300 transition-colors my-4">
                   <FaExternalLinkAlt size={20} />
                 </a>                                 
-                
+{/*                 
                 <a
                   href="https://github.com/tonpseudo" // remplace par ton lien GitHub
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-teal-300 transition-colors my-4">
                     <FaGithub size={20} />
-                  </a>                              
+                  </a>                               */}
               </div>
             </div>
-
 
             <div
               className="
@@ -221,7 +106,7 @@ export const Projects = () => {
                   )
                 )}
               </div>
-             <div className="absolute bottom-4 right-4 flex items-center gap-4">                
+             {/* <div className="absolute bottom-4 right-4 flex items-center gap-4">                
                 <a
                   href="https://ctdirect.fr/" // remplace par ton lien GitHub
                   target="_blank"
@@ -237,8 +122,127 @@ export const Projects = () => {
                   className="text-gray-400 hover:text-teal-300 transition-colors my-4">
                     <FaGithub size={20} />
                   </a>                              
+              </div> */}
+            </div>            
+
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-teal-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all relative
+            "
+            >
+              <h3 className="text-xl font-bold mb-2 hover:text-teal-300 transition-colors">Migrations</h3>
+              <p className="text-gray-300 mb-4">
+                Migration des services WCF vers une API RESTful avec ASP.NET Core (Aurore)
+              </p>
+
+              <p className="text-gray-300 mb-4">
+                Migration des rapports Crystal Reports vers SSRS (SQL Server Reporting Services)
+              </p>
+              <p className="text-gray-300 mb-4">
+                Migration et intégration de PDF.js pour l'affichage de rapports interactifs (CTDirect)
+              </p>              
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {[".Net Core", "Web API", "SSRS", "SQL"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="
+                      bg-teal-500/10 text-teal-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-teal-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-            </div>                      
+
+              <div className="absolute bottom-4 right-4 flex items-center gap-4">                
+                <a
+                  href="https://ctdirect.fr/" // remplace par ton lien GitHub
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-teal-300 transition-colors my-4">
+                  <FaExternalLinkAlt size={20} />
+                </a>                                 
+                
+                {/* <a
+                  href="https://github.com/tonpseudo" // remplace par ton lien GitHub
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-teal-300 transition-colors my-4">
+                    <FaGithub size={20} />
+                  </a>                               */}
+              </div>
+              {/* <div className="flex justify-between items-center ">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-teal-300 transition-colors my-4"
+                >
+                  View Project →
+                </a>             
+              </div> */}
+            </div>
+
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-teal-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all relative
+            "
+            >
+              <h3 className="text-xl font-bold mb-2 hover:text-teal-300 transition-colors">Consolidation des données (Aurore)</h3>
+              <p className="text-gray-300 mb-4">
+                Maintenance corrective, évolutive de la consolidation des données : 
+                centraliser et organiser des données provenant de plusieurs sources distinctes (centres) 
+                afin de les analyser, de les traiter et de les visualiser de manière cohérente.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["C#", ".Net", "SQL"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="
+                      bg-teal-500/10 text-teal-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-teal-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              {/* <div className="absolute bottom-4 right-4 flex items-center gap-4">                
+                  <a
+                    href="https://ctdirect.fr/" // remplace par ton lien GitHub
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-teal-300 transition-colors my-4">
+                    <FaExternalLinkAlt size={20} />
+                  </a>                                 
+                  
+                  <a
+                    href="https://github.com/tonpseudo" // remplace par ton lien GitHub
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-teal-300 transition-colors my-4">
+                    <FaGithub size={20} />
+                  </a>                              
+              </div> */}
+
+            </div>             
+
+
+
+
+                      
           </div>
 
             {showMore && (
@@ -288,13 +292,13 @@ export const Projects = () => {
                     <FaExternalLinkAlt size={20} />
                   </a>                                 
                   
-                  <a
+                  {/* <a
                     href="https://github.com/tonpseudo" // remplace par ton lien GitHub
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-teal-300 transition-colors my-4">
                       <FaGithub size={20} />
-                    </a>                              
+                    </a>                               */}
                 </div>
                 {/* <div className="flex justify-between items-center ">
                   <a
@@ -340,20 +344,20 @@ export const Projects = () => {
                 </div>
                 <div className="absolute bottom-4 right-4 flex items-center gap-4">                
                     <a
-                      href="https://ctdirect.fr/" // remplace par ton lien GitHub
+                      href="https://www.upsideo.fr/" // remplace par ton lien GitHub
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-teal-300 transition-colors my-4">
                       <FaExternalLinkAlt size={20} />
                     </a>                                 
                     
-                    <a
+                    {/* <a
                       href="https://github.com/tonpseudo" // remplace par ton lien GitHub
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-teal-300 transition-colors my-4">
                       <FaGithub size={20} />
-                    </a>                              
+                    </a>                               */}
                 </div>
 
               </div>

@@ -1,8 +1,14 @@
-import { useState } from "react";
+import {useState, useRef, useEffect} from 'react'
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
 
 export const Contact = () => {
+  const [responseMessage, setResponseMessage] = useState(""); 
+  const [submitted, setSubmitted] = useState(false);  
+  const confirmationRef = useRef(null); // Reference for a scroll 
+  const [loading, setLoading] = useState(false); 
+
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,6 +18,9 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setLoading(true); // On indique send loading
+    setResponseMessage(""); // next message null
+
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -20,11 +29,27 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
-        alert("Message Sent!");
+        //alert("Message Sent!");
+        setResponseMessage("✅ Sending message with success !");
+        setSubmitted(true);        
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() => {
+        //alert("Oops! Something went wrong. Please try again."));
+        setResponseMessage(`Oops! Something went wrong. Please try again.`);
+              
+      })
+      .finally(()=>{
+        setLoading(false);
+      }); 
   };
+
+  // Scroll vers le message de confirmation
+  useEffect(() => {
+      if (submitted && confirmationRef.current) {
+      confirmationRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+  }, [submitted]);
 
   return (
     <section
@@ -42,7 +67,7 @@ export const Contact = () => {
             Je cherche à rejoindre une équipe ou un projet où je pourrai contribuer 
             avec mes compétences en .NET, React et architectures modernes.
           </p>
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <form className="space-y-6" onSubmit={handleSubmit} onChange={() => setSubmitted(false)}>
             <div className="relative">
               <input
                 type="text"
@@ -90,10 +115,15 @@ export const Contact = () => {
 
             <button
               type="submit"
+              disabled={loading}
               className="w-full bg-teal-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
-              Envoyer
+              {loading ? "Chargement..." : "Envoyer"}
             </button>
+
+            {submitted && <p ref={confirmationRef} className= 'fade-in' style={{ color: "green" }}>
+            {responseMessage}
+            </p>}            
           </form>
         </div>
       </RevealOnScroll>
